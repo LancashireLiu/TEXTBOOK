@@ -1,0 +1,185 @@
+\contentsline {chapter}{前言}{i}{chapter*.1}%
+\contentsline {chapter}{目录}{ix}{chapter*.5}%
+\gdef \the@ipfilectr {@-1}
+\contentsline {chapter}{\numberline {第~1~章\hspace {.3em}}章节标题}{1}{chapter.1}%
+\contentsline {section}{引言}{1}{section*.6}%
+\contentsline {section}{\numberline {1.1}节标题}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}小节标题}{1}{subsection.1.1.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}总结}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}习题}{2}{section.1.3}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\contentsline {chapter}{\numberline {第~2~章\hspace {.3em}}章节标题}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}引言}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}节标题}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}小节标题}{3}{subsection.2.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{3}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}总结}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}习题}{4}{section.2.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\contentsline {chapter}{\numberline {第~3~章\hspace {.3em}}章节标题}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}引言}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}节标题}{5}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}小节标题}{5}{subsection.3.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{5}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}总结}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}习题}{6}{section.3.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\contentsline {chapter}{\numberline {第~4~章\hspace {.3em}}章节标题}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}引言}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}节标题}{7}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}小节标题}{7}{subsection.4.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{7}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}总结}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.4}习题}{8}{section.4.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\contentsline {chapter}{\numberline {第~5~章\hspace {.3em}}章节标题}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}引言}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}节标题}{9}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}小节标题}{9}{subsection.5.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{9}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}总结}{10}{section.5.3}%
+\contentsline {section}{\numberline {5.4}习题}{10}{section.5.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\contentsline {chapter}{\numberline {第~6~章\hspace {.3em}}章节标题}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}引言}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}节标题}{11}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}小节标题}{11}{subsection.6.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{11}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}总结}{12}{section.6.3}%
+\contentsline {section}{\numberline {6.4}习题}{12}{section.6.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\contentsline {chapter}{\numberline {第~7~章\hspace {.3em}}章节标题}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}引言}{13}{section.7.1}%
+\contentsline {section}{\numberline {7.2}节标题}{13}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}小节标题}{13}{subsection.7.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{13}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}总结}{14}{section.7.3}%
+\contentsline {section}{\numberline {7.4}习题}{14}{section.7.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\contentsline {chapter}{\numberline {第~8~章\hspace {.3em}}章节标题}{15}{chapter.8}%
+\contentsline {section}{\numberline {8.1}引言}{15}{section.8.1}%
+\contentsline {section}{\numberline {8.2}节标题}{15}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}小节标题}{15}{subsection.8.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{15}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}总结}{16}{section.8.3}%
+\contentsline {section}{\numberline {8.4}习题}{16}{section.8.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-9}
+\contentsline {chapter}{\numberline {第~9~章\hspace {.3em}}章节标题}{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}引言}{17}{section.9.1}%
+\contentsline {section}{\numberline {9.2}节标题}{17}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}小节标题}{17}{subsection.9.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{17}{subsection.9.2.1}%
+\contentsline {section}{\numberline {9.3}总结}{18}{section.9.3}%
+\contentsline {section}{\numberline {9.4}习题}{18}{section.9.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-10}
+\contentsline {chapter}{\numberline {第~10~章\hspace {.3em}}章节标题}{19}{chapter.10}%
+\contentsline {section}{\numberline {10.1}引言}{19}{section.10.1}%
+\contentsline {section}{\numberline {10.2}节标题}{19}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}小节标题}{19}{subsection.10.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{19}{subsection.10.2.1}%
+\contentsline {section}{\numberline {10.3}总结}{20}{section.10.3}%
+\contentsline {section}{\numberline {10.4}习题}{20}{section.10.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\contentsline {chapter}{\numberline {第~11~章\hspace {.3em}}章节标题}{21}{chapter.11}%
+\contentsline {section}{\numberline {11.1}引言}{21}{section.11.1}%
+\contentsline {section}{\numberline {11.2}节标题}{21}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}小节标题}{21}{subsection.11.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{21}{subsection.11.2.1}%
+\contentsline {section}{\numberline {11.3}总结}{22}{section.11.3}%
+\contentsline {section}{\numberline {11.4}习题}{22}{section.11.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-12}
+\contentsline {chapter}{\numberline {第~12~章\hspace {.3em}}章节标题}{23}{chapter.12}%
+\contentsline {section}{\numberline {12.1}引言}{23}{section.12.1}%
+\contentsline {section}{\numberline {12.2}节标题}{23}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}小节标题}{23}{subsection.12.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{23}{subsection.12.2.1}%
+\contentsline {section}{\numberline {12.3}总结}{24}{section.12.3}%
+\contentsline {section}{\numberline {12.4}习题}{24}{section.12.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-13}
+\contentsline {chapter}{\numberline {第~13~章\hspace {.3em}}章节标题}{25}{chapter.13}%
+\contentsline {section}{\numberline {13.1}引言}{25}{section.13.1}%
+\contentsline {section}{\numberline {13.2}节标题}{25}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}小节标题}{25}{subsection.13.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{25}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}总结}{26}{section.13.3}%
+\contentsline {section}{\numberline {13.4}习题}{26}{section.13.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-14}
+\contentsline {chapter}{\numberline {第~14~章\hspace {.3em}}物联网安全}{27}{chapter.14}%
+\contentsline {section}{\numberline {14.1}引言}{27}{section.14.1}%
+\contentsline {section}{\numberline {14.2}物联网安全概述}{27}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}什么是物联网？}{27}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}物联网安全事件}{29}{subsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.2.3}物联网安全特点}{30}{subsection.14.2.3}%
+\contentsline {subsection}{\numberline {14.2.4}物联网安全体系结构}{31}{subsection.14.2.4}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 物联网感知安全 }}}{31}{subsection.14.2.4}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 物联网接入安全 }}}{32}{subsection.14.2.4}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {3. 物联网通信安全 }}}{32}{subsection.14.2.4}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {4. 物联网数据安全 }}}{32}{subsection.14.2.4}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {5. 物联网隐私安全 }}}{33}{subsection.14.2.4}%
+\contentsline {subsection}{\numberline {14.2.5}物联网安全挑战}{33}{subsection.14.2.5}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1.针对物联网的攻击增加}}}{33}{subsection.14.2.5}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 物联网协议安全性低}}}{34}{subsection.14.2.5}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {3.物联网设备的认证与授权机制不完善}}}{34}{subsection.14.2.5}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {4.物联网隐私泄露问题堪忧}}}{34}{subsection.14.2.5}%
+\contentsline {section}{\numberline {14.3}针对物联网的特定攻击}{35}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}物理层侧信道威胁}{35}{subsection.14.3.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 基于机械波的攻击 }}}{36}{subsection.14.3.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 基于电磁波的攻击 }}}{36}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}系统级固件脆弱性}{36}{subsection.14.3.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 内存漏洞 }}}{37}{subsection.14.3.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 逻辑漏洞 }}}{38}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}前沿研究}{38}{subsection.14.3.3}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 侧信道威胁 }}}{38}{subsection.14.3.3}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 固件脆弱性 }}}{39}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.4}物联网网络协议安全}{39}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}物联网通用网络协议安全}{40}{subsection.14.4.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. Bluetooth}}}{40}{subsection.14.4.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. Wi-Fi}}}{41}{subsection.14.4.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {3. NFC}}}{41}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}物联网专用网络协议安全}{42}{subsection.14.4.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. ZigBee}}}{42}{subsection.14.4.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. MQTT}}}{42}{subsection.14.4.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {3. LoRa}}}{43}{subsection.14.4.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {4. NB-IoT}}}{43}{subsection.14.4.2}%
+\contentsline {subsection}{\numberline {14.4.3}前沿研究}{44}{subsection.14.4.3}%
+\contentsline {section}{\numberline {14.5}物联网设备的认证与授权}{45}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}权限管理与隐私威胁}{45}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.2}用户与设备认证}{47}{subsection.14.5.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1.用户身份认证}}}{47}{subsection.14.5.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2.设备身份认证}}}{49}{subsection.14.5.2}%
+\contentsline {subsection}{\numberline {14.5.3}前沿研究}{50}{subsection.14.5.3}%
+\contentsline {section}{\numberline {14.6}物联网隐私保护技术}{51}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}物联网隐私保护新特点}{51}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.2}物联网隐私数据分类}{52}{subsection.14.6.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 动态数据和静态数据}}}{53}{subsection.14.6.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {2. 生物特征数据和非生物特征数据}}}{53}{subsection.14.6.2}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {3. 个人数据和非个人数据}}}{53}{subsection.14.6.2}%
+\contentsline {subsection}{\numberline {14.6.3}物联网轻量级隐私保护技术}{53}{subsection.14.6.3}%
+\contentsline {subsection}{\numberline {14.6.4}前沿研究}{55}{subsection.14.6.4}%
+\contentsline {section}{\numberline {14.7}总结}{56}{section.14.7}%
+\contentsline {section}{\numberline {14.8}习题}{56}{section.14.8}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-15}
+\contentsline {chapter}{\numberline {第~15~章\hspace {.3em}}章节标题}{57}{chapter.15}%
+\contentsline {section}{\numberline {15.1}引言}{57}{section.15.1}%
+\contentsline {section}{\numberline {15.2}节标题}{57}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}小节标题}{57}{subsection.15.2.1}%
+\contentsline {subsubsection}{\textcolor {myblue}{\textbf {1. 小标题 }}}{57}{subsection.15.2.1}%
+\contentsline {section}{\numberline {15.3}总结}{58}{section.15.3}%
+\contentsline {section}{\numberline {15.4}习题}{58}{section.15.4}%
+\gdef \the@ipfilectr {}
+\contentsline {section}{参考文献}{59}{Item.30}%

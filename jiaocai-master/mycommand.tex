@@ -1,0 +1,178 @@
+% ===========================================================================================
+% 我自己定义的一些命令
+% ===========================================================================================
+
+
+% For using the font of \mathpzc
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+% 一些数学符号，如箭头等，与两边符号的间距过大，在这里定义比较紧一些间距的符号，这些命令只能用于数学模式
+\newcommand {\tleq}{\negthickspace\leq\negthickspace}           % for change the space before and after \leq
+\newcommand {\tsubseteq}{\negthickspace\subseteq\negthickspace} % for change the space before and after \subsetq
+\newcommand {\tto}{\negthickspace\to\negthickspace}             % for change the space before and after \to
+\newcommand {\tin}{\negthickspace\in\negthickspace}             % for change the space before and after \in
+\newcommand {\ttimes}{\negthickspace\times\negthickspace}       % for change the space before and after \times
+\newcommand {\tplus}{\negthickspace +\negthickspace}            % for change the space before and after +
+\newcommand {\tTo}{\negthickspace\Rightarrow\negthickspace}     % for change the space before and after \Rightarrow
+\newcommand {\tvdash}{\negthickspace\vdash\negthickspace}       % for change the space before and after \vdash
+
+% 定义一些常用串的组合，这些串只能用于数学模式。定义这些串可减少输入时间
+\newcommand {\sembracket}[1]{\llbracket#1\rrbracket}            % for giving the semantic bracket such as [[ _ ]]
+\newcommand {\prodmedt}[1]{\langle#1\rangle}                    % for giving the product mediate morphism, such as < _ >
+\newcommand {\coprmedt}[1]{[#1]}                                % for giving the product mediate morphism, such as [ _ ]
+%\newcommand {\finalhomo}{\text\textexclamdown}                  % for down !
+\newcommand {\finalhomo}{\text{!}}                            % use ! for final homomorphism
+\newcommand {\eqdef}{\stackrel{\mathrm{def}}{=}}                % for `def' over =
+
+% 为范畴和函子定义一些常用的串，这些串都只能用于数学模式，定义这些串除了减少输入时间之外，
+% 也可方便地修改这些符号所使用的字体
+
+
+% 范畴所用的字体
+\newcommand {\Cat}[1]{\mathcal{#1}}                             % #1 is a category，这里#1只能有一个字母，通常是泛指的范畴
+\newcommand {\Cats}[1]{\mathpzc{#1}}                            % #1 is a category, 这里#1有多个字母，通常是具体的范畴
+\newcommand {\CatC}{\Cat{C}}                                    % Category C
+\newcommand {\CatD}{\Cat{D}}                                    % Category D
+\newcommand {\CatE}{\Cat{E}}                                    % Category E
+% 函子所用的字体
+\newcommand {\Fun}[1]{\textsl{#1}}                              % #1 is a functor
+\newcommand {\FunT}{\Fun{T}}                                    % Functor T
+\newcommand {\FunF}{\Fun{F}}                                    % Functor F
+\newcommand {\FunG}{\Fun{G}}                                    % Functor G
+\newcommand {\FunH}{\Fun{H}}                                    % Functor H
+% 对象类和射类的名字所用的字体，例如Mono(C)，代表范畴C的所有单射构成的类等，这里Mono就是这一类射的名字
+\newcommand {\Mors}[1]{\mathbf{#1}}                             % 主要是针对各种单射和满射构成的类
+\newcommand {\Objs}[1]{\mathbf{#1}}                             % 主要是针对子对象、商对象和关系
+
+
+% 定义一些常用的设置文本颜色命令
+\definecolor{darkgreen}{rgb}{0.00,0.50,0.25}
+\definecolor{darkyellow}{rgb}{0.50,0.50,0.00}
+
+\newcommand {\redtext}[1]{\textcolor{red}{#1}}                  % set the red color text
+\newcommand {\bluetext}[1]{\textcolor{blue}{#1}}                % set the blue color text
+\newcommand {\greentext}[1]{\textcolor{darkgreen}{#1}}          % set the dark green color text
+\newcommand {\yellowtext}[1]{\textcolor{darkyellow}{#1}}        % set the dark green color text
+\newcommand {\magentatext}[1]{\textcolor{magenta}{#1}}          % set the dark green color text
+
+\newcommand {\define}[1]{{\heiti\redtext{#1}}}                  % 定义中所要定义的概念使用红色黑体字标出
+\newcommand {\notice}[1]{{\heiti\bluetext{#1}}}                 % 正文中要注意的句子使用蓝色黑体字标出
+
+\definecolor{mathbgc}{rgb}{1.00,1.00,0.80}                      % 用于数学公式背景色
+\definecolor{mathfgc}{rgb}{0.68,0.00,0.00}                      % 用于数学公式前景色
+\definecolor{progfgc}{rgb}{0.00,0.00,1.00}
+\definecolor{progbgc}{rgb}{0.90,0.90,1.00}
+\definecolor{itemiclr}{rgb}{0.00,0.00,0.5}
+\definecolor{itemiiclr}{rgb}{0.00,0.39,0.39}
+\definecolor{itemiiiclr}{rgb}{0.3,0.00,0.22}
+\definecolor{textfgc}{rgb}{0.00,0.25,0.00}
+\definecolor{textbgc}{rgb}{1.00,1.00,0.80}
+\definecolor{diagfgc}{rgb}{0.45,0.15,0.00}
+\definecolor{diagbgc}{rgb}{1.00,0.90,0.80}
+
+
+\definecolor{formbgc}{rgb}{0.90,0.90,1.00}                      % 用于数学公式背景色
+\definecolor{formfgc}{rgb}{0.75,0.00,0.0}                      % 用于数学公式背景色
+
+\newcommand {\formblock}[1]{\colorbox{formbgc}{\textcolor{formfgc}{#1}}}        % 带颜色的公式块
+
+\newcommand {\mathcolorbox}[2]{
+\begin{center}
+\colorbox{mathbgc}{\textcolor{mathfgc}{
+    \begin{minipage}{#1}\vspace{-1.5em}
+        #2
+    \end{minipage}
+}}
+\end{center}
+}
+
+\newcommand {\formcolorbox}[2]{
+\begin{center}
+\colorbox{formbgc}{\textcolor{formfgc}{
+    \begin{minipage}{#1}\vspace{-1.2em}
+        #2
+    \end{minipage}
+}}
+\end{center}
+}
+
+\newcommand {\progcolorbox}[2]{
+\begin{center}
+\colorbox{progbgc}{\textcolor{progfgc}{
+    \begin{minipage}{#1}\vspace{-1.5em}
+        #2
+    \end{minipage}
+}}
+\end{center}
+}
+
+\newcommand {\textcolorbox}[2]{
+\begin{center}
+\colorbox{textbgc}{\textcolor{textfgc}{
+    \begin{minipage}{#1}
+        #2
+    \end{minipage}
+}}
+\end{center}
+}
+
+\newcommand {\truek}{~\mathbf{true}~}
+\newcommand {\falsek}{~\mathbf{false}~}
+\newcommand {\skipk}{~\mathbf{skip}~}
+\newcommand {\ifk}{~\mathbf{if}~}
+\newcommand {\thenk}{~\mathbf{then}~}
+\newcommand {\elsek}{~\mathbf{else}~}
+\newcommand {\fork}{~\mathbf{for}~}
+\newcommand {\whilek}{~\mathbf{while}~}
+\newcommand {\dok}{~\mathbf{do}~}
+\newcommand {\tok}{~\mathbf{to}~}
+\newcommand {\downtok}{~\mathbf{downto}~}
+
+%\newcommand {\undef}{\textsf{undefine}}
+
+\newcommand {\dfracnoline}[2]{\genfrac{}{}{0pt}{0}{#1}{#2}}
+
+
+\newcommand {\vskipa}{\vspace{+0.2em}}
+\newcommand {\vskipb}{\vspace{+0.3em}}
+\newcommand {\vskipc}{\vspace{+0.5em}}
+\newcommand {\vskipd}{\vspace{+0.8em}}
+
+
+\newcommand {\explain}[1]{//~\mbox{\bluetext{#1}}}   % 用于数学模式下的注释
+
+\newcommand {\fcoalgsn}{\mathbb{R}^\mathbb{N}}
+\newcommand {\true}{\textmd{tt}}
+\newcommand {\false}{\textmd{ff}}
+\newcommand {\coalg}[1]{~\mathfrak{#1}}
+\newcommand {\fsym}[1]{\mathrm{#1}}
+\newcommand {\sgto}[1]{\rightsquigarrow^{#1}}
+\newcommand {\bisim}{\sim}
+
+\newcommand \utype{\mathsf{Unit}}
+\newcommand \stype{\mathsf{State}}
+\newcommand \uterm{\mathsf{unit}}
+\newcommand \sterm{\mathsf{state}}
+\newcommand \fsterm{\mathsf{fst}}
+\newcommand \snterm{\mathsf{snd}}
+\newcommand \ilterm{\mathsf{inl}}
+\newcommand \irterm{\mathsf{inr}}
+\newcommand \csterm{\mathsf{case}}
+\newcommand \tterm{\mathsf{trans}}
+\newcommand {\spec}[1]{\textsf{spec}(#1)}
+\newcommand \FunS{\Fun{S}}
+
+\newcommand \spk[1]{\textbf{#1}}                                % 规范中的关键字的字体
+\newcommand \atk[1]{\textsf{#1}}                                % 规范中断言中的关键字的字体
+\newcommand \spm[1]{\textsf{#1}}                                % 规范中的操作名的字体
+\newcommand \spc[1]{\textrm{#1}}                                % 规范中其他名称（包括注释）的字体
+\newcommand \scase{\atk{CASES}}
+\newcommand \secas{\atk{ENDCASES}}
+
+\newcommand \dfraciff[2]{\xlongequal[{\displaystyle #2}]{\displaystyle #1}}
+
+\newcommand \tvalue{\mathbf{1}}
+\newcommand \fvalue{\mathbf{0}}
+\newcommand \ran{\mathbf{ran}}
+\newcommand \funid{\mathbf{id}}
+\newcommand \circledlabel[1]{\scriptsize\textcircled{\tiny #1}}

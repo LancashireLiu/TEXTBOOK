@@ -1,0 +1,31 @@
+%\newcommand\specialsectioning{\setcounter{secnumdepth}{0}} %定义\specialsectioning命令使\section{}不再编号，用在总结前面使总结、习题和附录不再编号，后面的section不必再使用*
+\specialsectioning
+\chapter{章节标题}
+\label{chap:intro}
+
+\section{引言}
+\renewcommand\specialsectioning{\setcounter{secnumdepth}{2}} %定义\specialsectioning命令使\section{}不再编号，用在总结前面使总结、习题和附录不再编号，后面的section不必再使用*
+\specialsectioning
+\renewcommand\sectionmark[1]{\markright{\thesection  #1}{}}
+
+这是引言
+
+
+\input{Chapter15/section_1}
+
+
+\section{总结}
+\label{xj_ch2}
+
+
+%\newpage
+\section{习题}
+%\markboth{习题}{习题}
+
+\begin{enumerate}
+	\item {习题1}
+	\item {习题2}
+
+\end{enumerate}
+
+

@@ -1,0 +1,515 @@
+%!TeX program = xelatex
+
+\documentclass[a4paper]{ctexbook}
+\usepackage{makeidx}
+\usepackage[headings]{fullpage}         % 充分利用页面篇幅
+\usepackage{tocbibind}                  % 使生成的目录包括参考文献和索引
+%\usepackage[onehalfspacing]{setspace}
+
+%\===================================加入NetSec_1的包
+
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\usepackage[linkcolor=black]{hyperref}%所有链接宏包%所有链都改为黑色black
+\hypersetup{citecolor=black}%引用文献序号的颜色，默认为green
+\usepackage{pifont}
+\usepackage{enumerate}
+\usepackage{floatflt}
+\usepackage{ulem}
+\usepackage[paperwidth=186mm, paperheight=240mm, scale=0.8]{geometry}
+%\usepackage[numbers]{natbib}
+%\usepackage{chapterbib}
+\usepackage[sectionbib]{chapterbib}
+\usepackage{cite}
+\usepackage[square,comma,sectionbib,numbers,sort&compress]{natbib}
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+\usepackage{pifont}
+\hypersetup{hidelinks}
+
+\usepackage{xurl}
+\hypersetup{
+	pdfborder = {0 0 0}
+}
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{float}
+%\usepackage[CJKbookmarks,linkcolor=black]{hyperref}
+%\usepackage[CJKbookmarks, colorlinks, bookmarksnumbered=true,pdfstartview=FitH,linkcolor=black]{hyperref}   % 书签功能，选项去掉链接红色方框
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{multicol, blindtext}
+\usepackage{wrapfig}
+\usepackage[center]{caption}
+
+\usepackage{colortbl}
+%\DeclareCaptionLabelFormat{nonumber}{#1}
+
+\usepackage{caption}%去图1.1:中的冒号 对应正文中\caption
+\captionsetup{font=small,labelsep=quad,width=120mm}%相当于1.1为小五号字;后面加一个中文空;width=120表示图说宽120mm
+\DeclareCaptionLabelFormat{nonumber}{#1}
+\usepackage{slashbox}%表格对角线
+
+%%%%%%%%%%%%%新加内容begin
+\DeclareSymbolFont{lettersA}{U}{txmia}{m}{it}%派正体（4行可能是）可以用，但上面更简单些
+\DeclareMathSymbol{\piup}{\mathord}{lettersA}{25}
+\DeclareMathSymbol{\muup}{\mathord}{lettersA}{22}
+\DeclareMathSymbol{\deltaup}{\mathord}{lettersA}{14}
+%%%%%%%%%%%%%新加内容end
+
+\usepackage{titlesec}%定义标题宏命令
+
+\newfont{\chapterNumber}{eurb10 scaled 5000}%
+\definecolor{halfgray}{gray}{0.55}%定义所需颜色
+\definecolor{myblue}{cmyk}{0, 0.6, 0.4, 0.3}
+%\definecolor{myblue}{RGB}{57,77,147}
+\titleformat{\chapter}[block]%
+{\color{myblue}\heiti\normalfont\huge\sffamily}%
+{{\color{myblue}\chapterNumber\thechapter%
+		\hspace{10pt}\vline}  }{14pt}%
+{}
+
+
+\titleformat*{\section}{\color{myblue}\bf\heiti\Large}%\centering 居中
+\titlespacing*{\section}{0pt}{*2.2}{*1.2}
+
+\titleformat*{\subsection}{\color{myblue}\bf\heiti\large}%\centering 居中
+
+\CTEXsetup[name={第~,~章},number={\arabic{chapter}},nameformat+={\LARGE},titleformat+={\LARGE}]{chapter}% 第一章 > 第1章
+%\CTEXsetup[name={},number={\arabic{chapter}},nameformat+={\LARGE},titleformat+={\LARGE}]{chapter}% 第一章 > 第1章
+
+%\usepackage{arsclassica}
+
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{url}
+
+\usepackage{dsfont}
+\usepackage{mdframed}
+\newcommand{\todo}{\textcolor{red}}
+\newcommand{\defeq}{\stackrel{\text{\tiny def}}{=}}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\floatname{algorithm}{算法}
+
+\usepackage{fancybox}
+\usepackage{varwidth}
+\newcommand{\varbox}[1]{%
+	\setlength{\fboxrule}{0.2pt}
+	\fcolorbox{black}{yellow}{%
+		\begin{varwidth}{\textwidth}
+			#1
+\end{varwidth}}}
+
+\allowdisplaybreaks[2] %分页程度
+
+\usepackage[figuresright]{rotating}
+
+\usepackage{siunitx}
+\usepackage{thmtools}
+\usepackage{indentfirst}
+
+\theoremstyle{plain}
+\newtheorem{example}{例}
+
+\newmdenv[shadow=true,
+shadowsize=5pt,
+linewidth=2pt,
+frametitlerule=true,
+roundcorner=10pt,
+]{myshadowbox}
+
+\newmdenv[
+innertopmargin=-1pt,
+]{myequationbox}
+
+\newtheorem{definition}{定义}
+\newtheorem*{definition*}{定义}
+\newtheorem{problem}{问题}
+\newtheorem{theorem}{定理}
+\newtheorem*{theorem*}{定理}
+\newtheorem{remark}{注}
+\newtheorem*{remark*}{注}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem{proposition}{命题}
+\newtheorem{ex}{练习}[chapter]
+\newenvironment{ex*}
+{\renewcommand\theex{\thechapter.\arabic{ex}\rlap{$^*$}}\ex}
+{\endex}
+
+\newenvironment{Proof}[1][证明:]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\qed\end{trivlist}}
+
+\renewcommand*{\proofname}{证明}
+
+\renewcommand\figurename{图}
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{caption}
+\captionsetup{font={normalsize, color=myblue, bf}}
+
+
+\usepackage{array}
+
+\usepackage{fancyhdr}%书眉宏
+\pagestyle{fancy} \fancyhf{}%书眉线
+
+\fancypagestyle{afterContent}{
+	\fancyhead[RO]{\thepage}
+	\fancyhead[LO]{\bf{\rightmark}}	% 可以为空
+	\fancyhead[LE]{\thepage}		% 偶数页页眉为文章标题
+	\fancyhead[RE]{\bf{\leftmark}}
+	\fancyhead[OC]{}
+	\fancyhead[EC]{}
+}
+
+\fancypagestyle{preContent}{
+	\fancyhead[OL]{\bf{目录}}
+	\fancyhead[ER]{\bf{网络空间安全原理与实践}}
+	\fancyhead[LE]{\thepage}
+	\fancyhead[RO]{\thepage}
+}
+
+
+\usepackage{lastpage}
+\usepackage{layout}
+\renewcommand{\headrulewidth}{0.5pt}  %页眉线宽，设为0可以去页眉线
+\setlength{\skip\footins}{0.5cm}    %脚注与正文的距离
+\renewcommand{\footnotesize}{}      %设置脚注字体大小
+%\setlength\headwidth{16cm}
+%\setlength\textwidth{12.5cm}
+%\setlength\marginparwidth{3cm}
+%\setlength\textheight{180mm}
+%\setlength\hoffset{22mm}
+%\setlength\oddsidemargin{-3.26cm}
+\setlength\headwidth{15.6cm}
+\setlength\textwidth{12.6cm}
+\setlength\marginparwidth{2.5cm}
+\setlength\textheight{190mm}
+\setlength\hoffset{16mm}
+\setlength\oddsidemargin{-2cm}
+
+
+\newcommand{\snote}[1]{%
+	\marginpar{\small\kaishu\hspace{3mm}{%边注前空1字符
+			#1
+}}}
+\addtolength{\marginparsep}{7pt}%边跟正文距离
+
+\newcommand{\fnote}[1]{%
+	\footnote{\small\kaishu{
+			#1
+}}}
+
+\makeatletter
+\def\newparshape{\parshape\@npshape0{}}
+\def\@npshape#1#2#3{\ifx\\#3\expandafter\@@@npshape\else\expandafter\@@npshape\fi
+	{#1}{#2}{#3}}
+\def\@@npshape#1#2#3#4#5{%
+	\ifnum#3>\z@\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi
+	{\expandafter\@@npshape\expandafter{\the\numexpr#1+1\relax}{#2 #4 #5}{\numexpr#3-1\relax}{#4}{#5}}%
+	{\@npshape{#1}{#2}}}
+\def\@@@npshape#1#2#3{#1 #2 }
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 注释掉下面几行，可生成修改标注；保留为正式版。
+\renewcommand{\todo}{}
+\renewcommand{\xout}[1]{%
+}
+\renewcommand{\sout}[1]{%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\def\dm{\arabic{chapter}.\arabic{section}~~~}
+
+\usepackage{subfigure}
+\usepackage{enumitem}
+\AddEnumerateCounter{\chinese}{\chinese}{}
+
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\minimize}{minimize}
+\DeclareMathOperator*{\ctg}{ctg}
+\DeclareMathOperator*{\sign}{sign}
+\DeclareMathOperator*{\diag}{diag}
+\DeclareMathOperator*{\sigmoid}{sigmoid}
+\def\Min{{\rm minimize}}
+\def\Max{{\rm maximize}}
+\def\bx{{\boldsymbol{x}}}
+\def\R{{\mathbb R}}
+\def\ST{{\rm subject\ to}}
+\def\gl{\lambda}
+\def\bmgl{{\boldsymbol{\lambda}}}
+
+\newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
+		circle (.5em) node {\makebox[1em][c]{\small #1}};}}
+
+%\newcommand\specialsectioning{\setcounter{secnumdepth}{0}}
+\usepackage{bbding}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+\usepackage{seqsplit}
+\usepackage{pifont}
+\usepackage{makecell}
+\usepackage{yhmath}
+
+\usepackage{ragged2e}
+
+\usepackage{bm}
+%python 代码
+\usepackage{listings}
+\usepackage{ctex}
+% 用来设置附录中代码的样式
+\lstset{
+	basicstyle          =   \sffamily,          % 基本代码风格
+	keywordstyle        =   \bfseries,          % 关键字风格
+	commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+	stringstyle         =   \ttfamily,  % 字符串风格
+	flexiblecolumns,                % 别问为什么，加上这个
+	numbers             =   left,   % 行号的位置在左边
+	showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+	numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+	showstringspaces    =   false,
+	captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+	frame               =   none,   % 边框  显示lrtb
+	backgroundcolor     =   \color{red!1!green!1!blue!1} %背景颜色
+}
+\lstdefinestyle{Python}{
+	language        =   Python, % 语言选Python
+	basicstyle      =   \zihao{-5}\ttfamily,
+	numberstyle     =   \zihao{-5}\ttfamily,
+	keywordstyle    =   \color{black},%blue
+	keywordstyle    =   [2] \color{black},  %teal
+	stringstyle     =   \color{black}, %magenta
+	commentstyle    =   \color{black}\ttfamily,   %red
+	breaklines      =   true,   % 自动换行，建议不要写太长的行
+	columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+	basewidth       =   0.5em,
+}
+\renewcommand\lstlistingname{代码}
+
+%\hyphenpenalty=5000
+%\tolerance=1000
+%\setlength{\cftbeforechapskip}{10pt}
+%\usepackage{paralist}
+%\let\itemize\compactitem
+%\let\enditemize\endcompactitem
+%\let\enumerate\compactenum
+%\let\endenumerate\endcompactenum
+
+%\usepackage[nottoc,section]{tocbibind}
+
+\usepackage{tikz}
+\newcommand*{\mycircled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
+		circle (.5em) node {\makebox[1em][c]{\small #1}};}}
+
+%======================================================
+
+
+
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{caption}
+
+\usepackage{listings}
+%\usepackage[ruled,algochapter]{algorithm2e}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\usepackage{picinpar}                    % 用于在段落中嵌入一个窗口，以便放二维码
+%\usepackage{setspace}
+
+%\usepackage{multicol}
+%\usepackage{ccmap}                        % 支持在pdf文档中查找中文
+\usepackage{blkarray}                     % 支持在矩阵的边界外做标记，主要用于图的矩阵表示，用边、顶点标示矩阵列
+
+\RequirePackage{ifpdf}
+
+%\input{myusing}                         % 导入其他常用宏包
+\input{mycommand}                       % 载入我定义的常用命令
+
+\newcommand {\graphpath}{graph}
+
+\newcommand {\tablecell}[2]{\begin{minipage}{#1}{\vspace{+0.3em}#2\vspace{+0.3em}}\end{minipage}}
+
+
+\DeclareCaptionFont{blue}{\color{blue}} %
+\DeclareCaptionFont{red}{\color{red}} %
+\DeclareCaptionFont{kaishu}{\kaishu} %
+\DeclareCaptionFont{heiti}{\heiti} %
+\captionsetup{font={blue,kaishu},labelfont={red,heiti},labelsep=quad,belowskip=-1pt,aboveskip=0pt}
+
+
+\newcommand {\pname}[1]{\texttt{#1}}
+\newcommand {\lcm}{\textrm{lcm}}
+\newcommand {\assncite}[1]{~}
+\newcommand {\algename}[1]{\mathbf{#1}}
+\newcommand {\mymod}{\textrm{mod~}}
+\renewcommand {\lstlistingname}{程序}
+
+%\setdefaultleftmargin{3em}{2.5em}{2.0em}{1.8em}{1.5em}{1em}
+
+\lstset{% 设置程序源代码现实样式
+    language=java,
+    basicstyle=\small\color{diagfgc}\ttfamily,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{darkgreen}\rmfamily\itshape\negthinspace,
+%    stringstyle=\rmfamily,
+    showstringspaces=false,
+    frame=lines,
+    numbers=left,
+%    linewidth=0.95\textwidth,
+%    xleftmargin=4em,
+    backgroundcolor=\color{progbgc}
+}
+
+
+% 为全书的索引做准备
+%\makeindex
+
+%\setstretch{1.2121}
+
+%\usepackage{ccmap}
+
+\begin{document}
+
+%========================================NetSec
+
+\graphicspath{{TU/}}
+
+\linespread{1.31}
+
+\allowdisplaybreaks
+
+\numberwithin{problem}{chapter}
+%\numberwithin{theorem}{chapter}
+\numberwithin{corollary}{chapter}
+\numberwithin{lemma}{chapter}
+\numberwithin{example}{chapter}
+\numberwithin{definition}{chapter}
+\numberwithin{equation}{section}
+
+
+%\mbox{}
+%\vskip10pc
+
+%\makeatletter
+%\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+	%  \hskip -\arraycolsep
+	%  \let\@ifnextchar\new@ifnextchar
+	%  \array{#1}}
+
+\makeatother
+\pagenumbering{Roman}
+\pagestyle{preContent}
+%\tableofcontents
+\newpage
+\pagestyle{afterContent}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%==============================================
+
+
+%\input{mytheorem}                        % 载入我定义的各种类似定理的环境，因为出现中文，所以必须在\begin{document}之后
+
+
+% 使用 fancyverb 时使用下面的命令
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{formatcom=\color{progfgc},frame=lines,rulecolor=\color{red},fontsize=\small}
+
+
+
+% 定义标题
+\author{\kaishu\textcolor{blue}{\zihao{3} 周晓聪\qquad 乔海燕}\\[+0.5em] {\fangsong\textcolor{darkyellow}{\zihao{-4}中山大学数据科学与计算机学院,
+广州~510275}}}
+\title{{\heiti\zihao{1}\textcolor{red}{离散数学基础}}\\ \vspace{+1em}{\zihao{-2}\greentext{Elementary Discrete Mathematics}}\vspace{+2em}}
+
+% 生成标题
+\maketitle
+
+%\begin{tabular}{cc}
+%\tablecell{12em}{\begin{center}
+%\includegraphics{Rlogo.png}
+%\end{center}} &
+\thispagestyle{empty}\vspace{+0.8em}
+\begin{center} {\heiti\zihao{3}内~~容~~简~~介}
+\end{center}
+
+\vspace{+0.8em}离散数学基础课程是计算机专业学生的核心基础课程，提供包括逻辑、集合、算法、图论和代数在内的数学语言描述可枚举的数
+学对象，使得人们在利用计算机求解问题时可建立合适的数学模型并对其进行分析。本书根据作者多年教学实践经验编写而成，
+从描述离散数学模型的需要出发，给出有关逻辑语言、集合语言、算法语言、图论语言和代数语言的基础知识，培养学生运用这
+些离散数学语言和包括关系思维、逻辑思维、计算思维、量化思维和递归思维在内的思维方式建立离散数学模型的初步能力，
+并逐步树立离散化、模块化、层次化、公理化和系统化的计算机专业意识。全书共分十一章，包括命题逻辑、一阶逻辑、数学
+证明方法、集合、关系、函数、计数与组合、图与树和代数系统基础知识。
+
+\vspace{+0.8em}本书与计算机专业课程，特别是计算机程序设计课程紧密结合，知识体系严谨、结构清晰、内容精炼，
+并与国内普通高校本科低年级学生水平相适应。本书提供了大量例题与习题，并且许多例题以【问题】的形式出现，除给出参考
+的【解答】或【证明】外，通常在解答前可能有【分析】部分介绍求解问题的思路和切入点，在解答后可能有【讨论】部分补充
+解答的一些注意事项以及可能的启发。习题中还提供了不少程序设计的题目，完成这些编程题目对学习离散数学会有很大帮助。本书
+可作为高等院校计算机相关专业本科一、二年级“离散数学”类课程的教材，或者作为离散数学相关课程的参考书，也可供从事
+计算机专业相关工作的科研人员、工程技术人员及其他有关人员参考。
+
+
+\vspace{+2.5em}\noindent{\heiti\redtext{\copyright 版权所有，翻印必究}}
+
+
+%\end{tabular}
+
+% ========================== 讲稿的前导部分，包括目录等 ==================================================
+\frontmatter
+
+\chapter{前言}
+\input{preface}
+
+%\begin{multicols}{2}
+\tableofcontents
+%\end{multicols}
+
+% ========================== 讲稿的正文部分 =============================================================
+\mainmatter
+
+%\input{content}
+\include{Chapter1/chapter_1}
+\include{Chapter2/chapter_2}
+\include{Chapter3/chapter_3}
+\include{Chapter4/chapter_4}
+\include{Chapter5/chapter_5}
+\include{Chapter6/chapter_6}
+\include{Chapter7/chapter_7}
+\include{Chapter8/chapter_8}
+\include{Chapter9/chapter_9}
+\include{Chapter10/chapter_10}
+\include{Chapter11/chapter_11}
+\include{Chapter12/chapter_12}
+\include{Chapter13/chapter_13}
+\include{Chapter14/chapter_14}
+\include{Chapter15/chapter_15}
+%\include{Chapter16/chapter_16}A
+
+
+%\appendix
+%\chapter{中英文术语对照}\label{appendix:terminology}
+%\input{dmappend}
+
+%\chapter{修订说明}\label{apendix:amendnotes}
+%\input{dmnotes}
+
+% ========================== 书的结尾部分，包括索引、参考文献等 =========================================
+\backmatter
+
+%\setcounter{page}{411}
+\bibliography{discrete}
+\bibliographystyle{unsrt}
+
+% 读入rbook.ind文件的内容，产生索引，索引项由正文中的\index命令产生
+%\printindex
+
+\end{document}
